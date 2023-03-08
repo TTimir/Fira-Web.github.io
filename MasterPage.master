@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header>
+            <ul>
+                <div id="headerbox"></div>
+                <div id="box"></div>
+                <video autoplay muted loop id="bgvid">
+                    <source src="videoplayback%20(online-video-cutter.com).mp4" type="video/mp4" />
+                </video>
+                <li><a href="#detail"> ABOUT US </a></li>
+                <li><a href="#brandl"> LABELS </a></li>
+                <li><a href="#work"> WORK CULTURE </a></li>
+                <li><a href="Home.aspx"> <img src="image-removebg-preview.png" alt="" id="logo" /> </a></li>
+                <li><a href="#achievements"> ACHIEVEMENTS </a></li>
+                <li><a href="#"> BLOG </a></li>
+                <li><a href="Contact.aspx"> CONTACT </a></li>
+            </ul>
+            <div>
+                <div class="animate-contain">
+                    <div class="animated-text">
+                        <span>INSPIRED FROM NATURE</span>
+                        <span>LIMITED EDITION <br /> RELEASES</span>
+                        <span>NEW CATALOGES EVERY <br /> DAY</span>
+                    </div>
+                </div>       
+            </div>
+            <img src="Untitled.png" id="flower" />
+            <a href="#detail">
+                <div id="mouse-scroll">
+                    <div class="mouse">
+                        <div class="mouse-in"></div>
+                    </div>
+                    <div>
+                        <span class="down-arrow-1"></span>
+                        <span class="down-arrow-2"></span>
+                        <span class="down-arrow-3"></span>
+                    </div>
+                </div>
+            </a>
+        </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <footer>
+            <center><p>COPYRIGHT 2021 © ALL RIGHT RESERVED. FIRA</p>
+            <p>Follow us on</p>
+            <img src="facebook.png" />
+            <img src="instagram.png" />
+            <img src="linkedin.png" />
+            <img src="pinterest.png" />
+            <img src="search.png" />
+            <img src="twitter.png" />
+            <img src="whatsapp.png" />
+            <img src="youtube.png" /></center>
+        </footer>
+    </div>
+    </form>
+</body>
+</html>
